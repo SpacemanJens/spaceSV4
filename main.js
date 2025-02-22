@@ -7,7 +7,6 @@ let solarSystem;
 let planet2
 let backgroundStarsManager;
 let flightImages = [];
-let bulletType1Images = []; // JENSKH 2 &&  works  7 New
 let minimapImg = [];
 
 const detailsLevel = {
@@ -129,9 +128,6 @@ function preload() {
   me = partyLoadMyShared({ playerName: "observer" });
   guests = partyLoadGuestShareds();
 
-  for (let i = 0; i < 9; i++) {
-    bulletType1Images[i] = loadImage(`images/bulletType1-28x60/bullet${i}.png`);
-  }
   for (let i = 0; i < 13; i++) {
     flightImages[i] = loadImage(`images/flight/flight${i}.png`);
     //    flightImages[i] = loadImage(`images/boss1.png`);

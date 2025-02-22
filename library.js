@@ -67,12 +67,7 @@ class Flight {
         bullet.yMouseStart - bullet.yStart
       ).normalize().heading();
       rotate(head + 1.555);
-  
-      if (detailsLevel.showGraphics) {
-        image(random(bulletType1Images), 0, 0, gameConstants.diameterBullet, gameConstants.diameterBullet * 2);
-      } else {
-        circle(0, 0, gameConstants.diameterBullet)
-      }
+      circle(0, 0, gameConstants.diameterBullet)
       pop();
     }
   
@@ -430,7 +425,6 @@ class Flight {
   
     draw() {
       if (detailsLevel.showGraphics) {
-        // image(random(bulletType1Images), 0, 0, gameConstants.diameterBullet, gameConstants.diameterBullet * 2);
         image(minimapImg[this.i], this.x, this.y, this.size, this.size);
         //image(minimapImage, this.xMinimap - this.diameterMinimap / 2, this.yMinimap - this.diameterMinimap / 2, this.diameterMinimap, this.diameterMinimap);
   
